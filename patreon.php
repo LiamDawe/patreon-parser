@@ -5,8 +5,6 @@ $line = an array of each persons information, like name, email, pledge amount et
 */
 $csv = array_map('str_getcsv', file('patreon.csv'));
 
-$data = [];
-
 // this removes the first two useless lines of headings and descriptions, so you just get the actual data
 array_splice($csv, 0, 2);
 
